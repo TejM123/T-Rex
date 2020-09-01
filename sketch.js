@@ -89,7 +89,7 @@ function spawnClouds() {
 }
 
 function spawnObstacles() {
-  if(frameCount % 60 === 0) {
+  if(frameCount % random(40,80) === 0) {
     var obstacle = createSprite(600,165,10,40);
     obstacle.velocityX = -4;
     
@@ -110,6 +110,10 @@ function spawnObstacles() {
               break;
       default: break;
     }
+    
+  
+    
+    
     
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.5;
